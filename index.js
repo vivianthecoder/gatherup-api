@@ -16,6 +16,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
+// GET array of all events
+app.get("/dashboard", (req, res) => {
+    const eventsData = fs.readFileSync("./data/events.json");
+    res.send(eventsData);
+});
+
 // POST a new event
 app.post("/dashboard", (req, res) => {
     try {    
