@@ -18,25 +18,31 @@ app.use(express.static("public"));
 
 // POST a new event
 app.post("/dashboard", (req, res) => {
-    const eventsData = fs.readFileSync("./data/events.json");
-    const parsedEvents = JSON.parse(eventsData);
-    const newEvent = {
-        id: uuidv4(),
-        // from react form field
-        eventName: req.body.eventName, 
-        eventDate: req.body.eventDate,
-        eventTime: req.body.eventTime,
-        eventLocation: req.body.eventLocation,
-        guestsCount: req.body.guestsNumber,
-        eventTheme: req.body.eventTheme,
-    };
+    try {    
+        const eventsData = fs.readFileSync("./data/events.json");
+        const parsedEvents = JSON.parse(eventsData);
 
-    // To add the new event in my events array
-    parsedEvents.push(newEvent);
+        const newEvent = {
+            id: uuidv4(),
+            // from react form field
+            eventName: req.body.eventName, 
+            eventDate: req.body.eventDate,
+            eventTime: req.body.eventTime,
+            eventLocation: req.body.eventLocation,
+            guestsCount: req.body.guestsNumber,
+            eventTheme: req.body.eventTheme,
+        };
 
-    // To update the new event within the JSON file
-    fs.writeFileSync("./data/events.json", JSON.stringify(parsedEvents));
-    res.send(parsedEvents); 
+        // To add the new event in my events array
+        parsedEvents.push(newEvent);
+
+        // To update the new event within the JSON file
+        fs.writeFileSync("./data/events.json", JSON.stringify(parsedEvents));
+        res.send(parsedEvents); 
+    } catch (error) {
+            console.error('Error posting a new event', error);
+            res.status(500).send({ error: 'Internal Server Error'});
+    }       
 });
 
 
