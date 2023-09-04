@@ -16,6 +16,18 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
+// GET array of all events
+app.get("/dashboard", (req, res) => {
+    try {
+        const eventsData = fs.readFileSync("./data/events.json");
+        const parsedEvents = JSON.parse(eventsData);
+        res.send(parsedEvents);
+    } catch (error) {
+        console.error('Error reading data', error);
+        res.status(500).send({ error: 'Internal Server Error' });
+    }
+});
+
 // POST a new event
 app.post("/dashboard", (req, res) => {
     try {    
