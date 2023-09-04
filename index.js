@@ -28,6 +28,14 @@ app.get("/dashboard", (req, res) => {
     }
 });
 
+// GET event details with an id of :id
+app.get("/events/:id", (req, res) => {
+    const eventsData = fs.readFileSync("./data/events.json");
+    const parsedEvents = JSON.parse(eventsData);
+    const eventById = parsedEvents.find((event) => event.id === req.params.id);
+    res.send(eventById);
+});
+
 // POST a new event
 app.post("/dashboard", (req, res) => {
     try {    
