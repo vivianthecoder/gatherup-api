@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // GET array of all events
-app.get("/dashboard", (req, res) => {
+app.get("/events", (req, res) => {
     try {
         const eventsData = fs.readFileSync("./data/events.json");
         const parsedEvents = JSON.parse(eventsData);
