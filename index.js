@@ -8,6 +8,7 @@ const cors = require("cors");
 const fs = require("fs");
 // To create new event id
 const { v4: uuidv4 } = require('uuid');
+const { parse } = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3031;
@@ -29,7 +30,7 @@ app.get("/dashboard", (req, res) => {
 });
 
 // GET event details with an id of :id
-app.get("/events/:id", (req, res) => {
+app.get("/dashboard/:id", (req, res) => {
     const eventsData = fs.readFileSync("./data/events.json");
     const parsedEvents = JSON.parse(eventsData);
     const eventById = parsedEvents.find((event) => event.id === req.params.id);
@@ -65,5 +66,37 @@ app.post("/dashboard", (req, res) => {
     }       
 });
 
+// PUT updated event details with an id of :id
+app.put("/dashboard/:id", (req, res) => {
+    try {
+        const eventsData = fs.readFileSync("./data/events.json");
+        const parsedEvents = JSON.parse(eventsData);
+
+        const eventIndex = parsedEvents.findIndex((event) => event.id === req.params.id);
+        console.log('work', eventIdToUpdate);
+
+        if (eventIndex === -1) {
+            return res.status(404).send({ error: 'Event not found' });
+        }
+ 
+        const updatedEvent = {
+            ...parsedEvents[eventIndex],
+            eventName: req.body.eventName, 
+            eventDate: req.body.eventDate,
+            eventTime: req.body.eventTime,
+            eventLocation: req.body.eventLocation,
+            guestsCount: req.body.guestsNumber,
+            eventTheme: req.body.eventTheme,
+        }
+
+        parsedEvents[eventIndex] = updatedEvent;
+
+        fs.writeFileSync('./data/events.json', JSON.stringify(parsedEvents));
+        res.send(updatedEvent);
+    } catch (error) {
+        console.error('Error updating event', error);
+        res.status(500).send({ error: 'Internal Server Error'});
+    }
+});
 
 app.listen(PORT, () => console.log(`App is listening on port ${PORT}`));
