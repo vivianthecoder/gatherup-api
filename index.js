@@ -73,7 +73,6 @@ app.put("/dashboard/:id", (req, res) => {
         const parsedEvents = JSON.parse(eventsData);
 
         const eventIndex = parsedEvents.findIndex((event) => event.id === req.params.id);
-        console.log('work', eventIdToUpdate);
 
         if (eventIndex === -1) {
             return res.status(404).send({ error: 'Event not found' });
@@ -81,6 +80,7 @@ app.put("/dashboard/:id", (req, res) => {
  
         const updatedEvent = {
             ...parsedEvents[eventIndex],
+            id: uuidv4(),
             eventName: req.body.eventName, 
             eventDate: req.body.eventDate,
             eventTime: req.body.eventTime,
