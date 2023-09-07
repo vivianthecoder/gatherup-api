@@ -17,6 +17,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
+// GET homepage
+app.get('/', (req, res) => {
+    res.send('homepage!');
+});
+
 // GET array of all events
 app.get("/dashboard", (req, res) => {
     try {
@@ -80,7 +85,6 @@ app.put("/dashboard/:id", (req, res) => {
  
         const updatedEvent = {
             ...parsedEvents[eventIndex],
-            id: uuidv4(),
             eventName: req.body.eventName, 
             eventDate: req.body.eventDate,
             eventTime: req.body.eventTime,
