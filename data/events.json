@@ -1,51 +1,51 @@
 [
-    {
-        "id": "1",
-        "eventName": "Thanksgiving Dinner Party",
-        "eventDate": "2023-10-05",
-        "eventTime": "15:00",
-        "eventLocation": "123 McDonald St.",
-        "eventTheme": "Formal",
-        "eventImage": "https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg?auto=compress&cs=tinysrgb&w=1600"
-    },
-    {
-        "id": "a849e58e-3c52-4bcd-800a-ecb8a5a1d639",
-        "eventName": "Bridal Shower",
-        "eventDate": "2023-12-01",
-        "eventTime": "14:00",
-        "eventLocation": "123 Google St.",
-        "guestsCount": "20",
-        "eventTheme": "Pink",
-        "eventImage": "https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-        "id": "84dc3a93-871e-416d-8bcb-01e13c6b8eba",
-        "eventName": "Housewarming",
-        "eventDate": "2023-12-03",
-        "eventTime": "13:00",
-        "eventLocation": "123 Google St.",
-        "guestsCount": "12",
-        "eventTheme": "Yellow",
-        "eventImage": "https://images.pexels.com/photos/903400/pexels-photo-903400.jpeg?auto=compress&cs=tinysrgb&w=1600"
-    },
-    {
-        "id": "8cf6b304-3ed6-452c-bdee-c2513e2fd810",
-        "eventName": "Halloween Party",
-        "eventDate": "2023-10-12",
-        "eventTime": "01:00",
-        "eventLocation": "123 Google St.",
-        "guestsCount": "25",
-        "eventTheme": "Black",
-        "eventImage": "https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg?auto=compress&cs=tinysrgb&w=1600"
-    },
-    {
-        "id": "bde41664-73d1-42ef-ac2e-57ceb2aaafaa",
-        "eventName": "Wedding",
-        "eventDate": "2023-10-14",
-        "eventTime": "12:02",
-        "eventLocation": "123 Google St.",
-        "guestsCount": "500",
-        "eventTheme": "Black",
-        "eventImage": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1600"
-    }
+  {
+    "id": "1",
+    "eventName": "Thanksgiving Dinner Party",
+    "eventDate": "October 4, 2023",
+    "eventTime": "15:00",
+    "eventLocation": "123 McDonald St.",
+    "eventTheme": "Formal",
+    "eventImage": "https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
+  {
+    "id": "a849e58e-3c52-4bcd-800a-ecb8a5a1d639",
+    "eventName": "Bridal Shower",
+    "eventDate": "2023-12-01",
+    "eventTime": "14:00",
+    "eventLocation": "123 Google St.",
+    "guestsCount": "20",
+    "eventTheme": "Pink",
+    "eventImage": "https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "84dc3a93-871e-416d-8bcb-01e13c6b8eba",
+    "eventName": "Housewarming",
+    "eventDate": "2023-12-03",
+    "eventTime": "13:00",
+    "eventLocation": "123 Google St.",
+    "guestsCount": "12",
+    "eventTheme": "Yellow",
+    "eventImage": "https://images.pexels.com/photos/903400/pexels-photo-903400.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
+  {
+    "id": "8cf6b304-3ed6-452c-bdee-c2513e2fd810",
+    "eventName": "Halloween Party",
+    "eventDate": "2023-10-12",
+    "eventTime": "01:00",
+    "eventLocation": "123 Google St.",
+    "guestsCount": "25",
+    "eventTheme": "Black",
+    "eventImage": "https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
+  {
+    "id": "bde41664-73d1-42ef-ac2e-57ceb2aaafaa",
+    "eventName": "Wedding",
+    "eventDate": "2023-10-14",
+    "eventTime": "12:02",
+    "eventLocation": "123 Google St.",
+    "guestsCount": "500",
+    "eventTheme": "Black",
+    "eventImage": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  }
 ]

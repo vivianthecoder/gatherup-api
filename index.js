@@ -103,4 +103,22 @@ app.put("/dashboard/:id", (req, res) => {
     }
 });
 
+// DELETE an event
+app.delete("/dashboard/:id", (req, res) => {
+    const eventsData = fs.readFileSync("./data/events.json");
+    const parsedEvents = JSON.parse(eventsData);
+
+    const eventIdToDelete = req.params.id;
+    const eventToDeleteIndex = parsedEvents.findIndex(event => event.id === eventIdToDelete);
+
+    if (eventToDeleteIndex === -1) {
+        return res.status(404).json({ message: 'Event not found' });
+    }
+
+    parsedEvents.splice(eventToDeleteIndex, 1);
+    // To update the events array within the JSON file
+    fs.writeFileSync("./data/events.json", JSON.stringify(parsedEvents, null, 2));
+    res.json({ message: 'Event deleted successfully' }); 
+});
+
 app.listen(PORT, () => console.log(`App is listening on port ${PORT}`));
