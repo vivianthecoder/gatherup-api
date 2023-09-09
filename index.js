@@ -38,7 +38,7 @@ app.get("/dashboard", (req, res) => {
 app.get("/dashboard/:id", (req, res) => {
     const eventsData = fs.readFileSync("./data/events.json");
     const parsedEvents = JSON.parse(eventsData);
-    const eventById = parsedEvents.find((event) => event.id === req.params.id);
+    const eventById = parsedEvents.find((event) => event.id === req.params.id.toString());
     res.send(eventById);
 });
 
@@ -49,13 +49,13 @@ app.post("/dashboard", (req, res) => {
         const parsedEvents = JSON.parse(eventsData);
 
         const newEvent = {
-            id: uuidv4(),
+            id: uuidv4().toString(),
             // from react form field
             eventName: req.body.eventName, 
             eventDate: req.body.eventDate,
             eventTime: req.body.eventTime,
             eventLocation: req.body.eventLocation,
-            guestsCount: req.body.guestsNumber,
+            guestsCount: req.body.guestsCount,
             eventTheme: req.body.eventTheme,
         };
 
@@ -89,7 +89,7 @@ app.put("/dashboard/:id", (req, res) => {
             eventDate: req.body.eventDate,
             eventTime: req.body.eventTime,
             eventLocation: req.body.eventLocation,
-            guestsCount: req.body.guestsNumber,
+            guestsCount: req.body.guestsCount,
             eventTheme: req.body.eventTheme,
         }
 
