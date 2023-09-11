@@ -1,1 +1,80 @@
-[{"id":"8cf6b344-3ed6-452c-bdee-c2513e2fd120","eventName":"Thanksgiving","eventDate":"October 5, 2023","eventTime":"12:00","eventLocation":"Dave's House","guestsCount":"100","eventTheme":"Slay","eventImage":"https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg?auto=compress&cs=tinysrgb&w=1600"},{"id":"a849e58e-3c52-4bcd-800a-ecb8a5a1d639","eventName":"Bridal Shower","eventDate":"November 30, 2023","eventTime":"14:00","eventLocation":"63 Lewis Crescent","guestsCount":"20","eventTheme":"Pink","eventImage":"https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},{"id":"84dc3a93-871e-416d-8bcb-01e13c6b8eba","eventName":"Housewarming","eventDate":"2023-12-03","eventTime":"13:00","eventLocation":"123 Google St.","guestsCount":"12","eventTheme":"Yellow","eventImage":"https://images.pexels.com/photos/903400/pexels-photo-903400.jpeg?auto=compress&cs=tinysrgb&w=1600"},{"id":"8cf6b304-3ed6-452c-bdee-c2513e2fd810","eventName":"Halloween Party","eventDate":"October 11, 2023","eventTime":"11:00","eventLocation":"Rebel Night Club","guestsCount":"25","eventTheme":"Black","eventImage":"https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg?auto=compress&cs=tinysrgb&w=1600"},{"id":"bde41664-73d1-42ef-ac2e-57ceb2aaafaa","eventName":"Wedding","eventDate":"October 13, 2023","eventTime":"12:02","eventLocation":"Marriot Toronto","guestsCount":"500","eventTheme":"Black","eventImage":"https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1600"},{"id":"fcd4f938-a165-4a5d-8868-5597edaa3d78","eventName":"Birthday Jam","eventDate":"June 30, 2023","eventTime":"02:00","eventLocation":"100 Jack Street","guestsCount":"10","eventTheme":"Yellow"},{"id":"31ad8880-fe9b-4ef4-ac40-d7b8d8def0a1","eventName":"Sunday Dinner","eventDate":"2023-02-04","eventTime":"18:01","eventLocation":"Grandma's House","guestsCount":"15","eventTheme":"Casual"},{"id":"79e807e3-4954-4e9a-9784-0cb3ac459660","eventName":"Christmas Party","eventDate":"December 24, 2024","eventTime":"18:00","eventLocation":"My House","guestsCount":"30","eventTheme":"XMAS"}]
+[
+    {
+        "id": "8cf6b344-3ed6-452c-bdee-c2513e2fd120",
+        "eventName": "Thanksgiving",
+        "eventDate": "October 5, 2023",
+        "eventTime": "12:00",
+        "eventLocation": "Dave's House",
+        "guestsCount": "100",
+        "eventTheme": "Slay",
+        "eventImage": "https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "eventAgenda": "1. Welcome and Social Hour (Start Time - Start Time + 30 minutes)\n\nGuests arrive and mingle.\nAppetizers and drinks served.\nBackground music playing.\n\n2. Opening Remarks (Start Time + 30 minutes)\n\nWelcome speech by the host.\nExpress gratitude for everyone's presence.\nBrief introduction of the evening's activities.\n\n3. Dinner Service (Start Time + 45 minutes)\n\nGuests are seated at the dining table.\nTraditional Thanksgiving feast served.\nVegetarian and dietary-restricted options available.\nWine and non-alcoholic beverages provided.\n\n4. Toast and Blessing (Start Time + 1 hour)\n\nA toast to celebrate the occasion.\nA moment for grace or a blessing, if desired.\n\n5. Dinner Conversation (Start Time + 1 hour 15 minutes)\n\nGuests enjoy their meal and engage in conversation.\nShare stories of gratitude and memorable moments.\n\n6. Thanksgiving Activities (Start Time + 2 hours)\n\nThanksgiving trivia or a fun game related to gratitude.\nCraft station for creating \"thankful\" cards.\n\n7. Dessert Time (Start Time + 2 hours 30 minutes)\n\nServe a variety of delicious desserts (e.g., pumpkin pie, apple crisp).\nCoffee, tea, and after-dinner drinks available.\n\n8. Storytelling and Sharing (Start Time + 3 hours)\n\nInvite guests to share their favorite Thanksgiving memories.\nEncourage gratitude reflections.\n\n9. Live Music or Entertainment (Start Time + 3 hours 30 minutes)\n\nLive music performance or entertainment act.\nDancing or background music for those who prefer to relax.\n\n10. Farewell and Thank You (Start Time + 4 hours)\n\nExpress gratitude to guests for joining.\nHand out small \"thank you\" tokens or party favors.\nEncourage guests to take home leftovers.\n\n11. Social Hour and Mingling (Start Time + 4 hours 15 minutes - End Time)\n\nGuests can continue to socialize and enjoy the evening.\nOffer coffee, tea, and more conversation.\n\n12. Closing Remarks and Goodbyes (End Time)\n\nThank guests once again for attending.\nProvide any necessary transportation or assistance to departing guests."
+    },
+    {
+        "id": "a849e58e-3c52-4bcd-800a-ecb8a5a1d639",
+        "eventName": "Bridal Shower",
+        "eventDate": "November 30, 2023",
+        "eventTime": "14:00",
+        "eventLocation": "63 Lewis Crescent",
+        "guestsCount": "20",
+        "eventTheme": "Pink",
+        "eventImage": "https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": "84dc3a93-871e-416d-8bcb-01e13c6b8eba",
+        "eventName": "Housewarming",
+        "eventDate": "2023-12-03",
+        "eventTime": "13:00",
+        "eventLocation": "123 Google St.",
+        "guestsCount": "12",
+        "eventTheme": "Yellow",
+        "eventImage": "https://images.pexels.com/photos/903400/pexels-photo-903400.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        "id": "8cf6b304-3ed6-452c-bdee-c2513e2fd810",
+        "eventName": "Halloween Party",
+        "eventDate": "October 11, 2023",
+        "eventTime": "11:00",
+        "eventLocation": "Rebel Night Club",
+        "guestsCount": "25",
+        "eventTheme": "Black",
+        "eventImage": "https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        "id": "bde41664-73d1-42ef-ac2e-57ceb2aaafaa",
+        "eventName": "Wedding",
+        "eventDate": "October 13, 2023",
+        "eventTime": "12:02",
+        "eventLocation": "Marriot Toronto",
+        "guestsCount": "500",
+        "eventTheme": "Black",
+        "eventImage": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+        "id": "fcd4f938-a165-4a5d-8868-5597edaa3d78",
+        "eventName": "Birthday Jam",
+        "eventDate": "June 30, 2023",
+        "eventTime": "02:00",
+        "eventLocation": "100 Jack Street",
+        "guestsCount": "10",
+        "eventTheme": "Yellow"
+    },
+    {
+        "id": "31ad8880-fe9b-4ef4-ac40-d7b8d8def0a1",
+        "eventName": "Sunday Dinner",
+        "eventDate": "2023-02-04",
+        "eventTime": "18:01",
+        "eventLocation": "Grandma's House",
+        "guestsCount": "15",
+        "eventTheme": "Casual"
+    },
+    {
+        "id": "79e807e3-4954-4e9a-9784-0cb3ac459660",
+        "eventName": "Christmas Party",
+        "eventDate": "December 24, 2024",
+        "eventTime": "18:00",
+        "eventLocation": "My House",
+        "guestsCount": "30",
+        "eventTheme": "XMAS"
+    }
+]
