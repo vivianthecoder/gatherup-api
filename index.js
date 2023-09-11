@@ -91,6 +91,7 @@ app.put("/dashboard/:id", (req, res) => {
             eventLocation: req.body.eventLocation,
             guestsCount: req.body.guestsCount,
             eventTheme: req.body.eventTheme,
+            eventAgenda: req.body.eventAgenda,
         }
 
         parsedEvents[eventIndex] = updatedEvent;
