@@ -15,13 +15,12 @@ APIs: Gather Up API, Google Maps API
 
 ## Features
 
-1. Creating, editing, and deleting events.
-2. Searching and filtering events.
-3. Integration with Google Maps API.
-4. Responsive design for mobile, tablet, and desktop devices.
-5. Upload photos and videos from events.
-6. Print selected event details.
-7. Submit contact form.
+1. GET Home Page.
+2. GET an array of all events.
+3. GET event details with an id of :id.
+4. POST a new event.
+5. PUT updated event details with an id of :id.
+6. DELETE an event.
 
 ## Installation
 
